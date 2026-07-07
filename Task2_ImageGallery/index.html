@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🌍 Travel Gallery</h1>
+        <p>Explore the world through breathtaking destinations</p>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="beach">Beach</button>
+        <button class="filter-btn" data-filter="mountain">Mountain</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="landmark">Landmark</button>
+    </div>
+
+    <div class="gallery">
+
+        <div class="gallery-item" data-category="beach">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Maldives Beach">
+            <div class="overlay">
+                <h3>Maldives</h3>
+                <p>Paradise Beach</p>
+                <button onclick="openLightbox(0)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="mountain">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600" alt="Mountains">
+            <div class="overlay">
+                <h3>Swiss Alps</h3>
+                <p>Majestic Mountains</p>
+                <button onclick="openLightbox(1)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2?w=600" alt="Tokyo">
+            <div class="overlay">
+                <h3>Tokyo</h3>
+                <p>City of Lights</p>
+                <button onclick="openLightbox(2)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="landmark">
+            <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=600" alt="Eiffel Tower">
+            <div class="overlay">
+                <h3>Paris</h3>
+                <p>Eiffel Tower</p>
+                <button onclick="openLightbox(3)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="beach">
+            <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=600" alt="Bali">
+            <div class="overlay">
+                <h3>Bali</h3>
+                <p>Tropical Paradise</p>
+                <button onclick="openLightbox(4)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="mountain">
+            <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=600" alt="Himalayas">
+            <div class="overlay">
+                <h3>Himalayas</h3>
+                <p>Roof of the World</p>
+                <button onclick="openLightbox(5)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="https://images.unsplash.com/photo-1496588152823-86ff7695e68f?w=600" alt="New York">
+            <div class="overlay">
+                <h3>New York</h3>
+                <p>The Big Apple</p>
+                <button onclick="openLightbox(6)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="landmark">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600" alt="Taj Mahal">
+            <div class="overlay">
+                <h3>Agra</h3>
+                <p>Taj Mahal</p>
+                <button onclick="openLightbox(7)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="beach">
+            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600" alt="Santorini">
+            <div class="overlay">
+                <h3>Santorini</h3>
+                <p>Greek Islands</p>
+                <button onclick="openLightbox(8)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600" alt="Dubai">
+            <div class="overlay">
+                <h3>Dubai</h3>
+                <p>City of Future</p>
+                <button onclick="openLightbox(9)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="landmark">
+            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600" alt="Colosseum">
+            <div class="overlay">
+                <h3>Rome</h3>
+                <p>The Colosseum</p>
+                <button onclick="openLightbox(10)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="mountain">
+            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600" alt="Northern Lights">
+            <div class="overlay">
+                <h3>Iceland</h3>
+                <p>Northern Lights</p>
+                <button onclick="openLightbox(11)"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <button class="close-btn" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+    <button class="prev-btn" onclick="changeImage(-1)"><i class="fas fa-chevron-left"></i></button>
+    <button class="next-btn" onclick="changeImage(1)"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="">
+        <div class="lightbox-info">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
